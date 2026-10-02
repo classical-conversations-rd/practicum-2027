@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Prácticum 2027 · Ciencias · Classical Conversations República Dominicana</title>
-<meta name="description" content="Prácticum 2027 de Classical Conversations en República Dominicana: ¿Cómo enseñar ciencias a nuestros hijos? Jornada de formación para padres en la Iglesia de Convertidos a Cristo, Santo Domingo. Fecha por confirmar. Boletas: US$30 / RD$1,800." />
+<meta name="description" content="Prácticum 2027 de Classical Conversations en República Dominicana: ¿Cómo enseñar ciencias a nuestros hijos? Jornada de formación para padres en la Iglesia de Convertidos a Cristo, Santo Domingo. Marzo de 2027. Boletas: US$30 / RD$1,800." />
 <meta name="color-scheme" content="light" />
 <meta name="theme-color" content="#FFF5F0" />
 
@@ -14,7 +14,7 @@
 
 <!-- Open Graph / redes sociales -->
 <meta property="og:title" content="Prácticum 2027 · ¿Cómo enseñar ciencias a nuestros hijos?" />
-<meta property="og:description" content="Leyendo el Libro de la Naturaleza: El Arte de la Observación. Jornada de formación para padres, Santo Domingo. Fecha por confirmar · 2027. Boletas: US$30 / RD$1,800." />
+<meta property="og:description" content="Leyendo el Libro de la Naturaleza: El Arte de la Observación. Jornada de formación para padres, Santo Domingo. Marzo 2027. Boletas: US$30 / RD$1,800." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://practicum2027.netlify.app/" />
 <meta property="og:image" content="https://practicum2027.netlify.app/img/og.jpg" />
@@ -24,7 +24,7 @@
 <meta property="og:locale" content="es_DO" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Prácticum 2027 · ¿Cómo enseñar ciencias a nuestros hijos?" />
-<meta name="twitter:description" content="Jornada de formación para padres en Santo Domingo. Fecha por confirmar · 2027. Boletas: US$30 / RD$1,800." />
+<meta name="twitter:description" content="Jornada de formación para padres en Santo Domingo. Marzo 2027. Boletas: US$30 / RD$1,800." />
 <meta name="twitter:image" content="https://practicum2027.netlify.app/img/og.jpg" />
 
 <!--
@@ -34,7 +34,7 @@
     2. ¿Cómo despertar el asombro por las ciencias en nuestros hijos? / Los Cielos Cuentan: El Arte de Preguntar a la Creación
     3. ¿Cómo enseñar ciencias sin perder la fe ni el asombro? / Pensando los Pensamientos de Dios: El Arte de Descubrir
        (usar la idea de Kepler solo como paráfrasis o "atribuida a Kepler": no tiene fuente primaria localizada)
-  Fecha: "Fecha por confirmar · 2027" hasta que CC la confirme. No inventar una fecha.
+  Fecha: "Marzo 2027"; el día exacto aún no se ha anunciado. No inventar un día.
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -349,6 +349,9 @@
   .door .acts .btn{padding:12px 18px;font-size:14px}
   .other{margin-top:28px;font-size:17px;color:var(--marino)}
   .sponsors{margin-top:96px}
+  .sponsors[hidden]{display:none}
+  .sp-logo{filter:grayscale(1);opacity:.55;mix-blend-mode:multiply;max-height:56px;width:auto;transition:opacity .2s}
+  .sp-logo:hover{opacity:.8}
   .sp-h{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end}
   .sp-h h3{grid-column:1 / span 6;font-size:clamp(30px,3.2vw,42px);font-weight:500}
   .sp-h p{grid-column:8 / span 5;font-size:17px;color:var(--pizarra)}
@@ -549,7 +552,6 @@
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="#boletas">Comprar boletas</a>
           <a class="link" href="#programa">Ver programa <span class="ar" aria-hidden="true">&rarr;</span></a>
-          <a class="link" href="mailto:ccrep.dom@gmail.com?subject=Av%C3%ADsame%20la%20fecha%20del%20Pr%C3%A1cticum%202027">Avísame la fecha</a>
         </div>
       </div>
       <figure class="hero-fig">
@@ -564,7 +566,7 @@
     <dl class="facts">
       <div class="fact">
         <dt class="label">Fecha</dt>
-        <dd><span class="v">Por confirmar · 2027</span><span class="s">Te avisamos por correo</span></dd>
+        <dd><span class="v">Marzo 2027</span></dd>
       </div>
       <div class="fact">
         <dt class="label">Horario</dt>
@@ -968,7 +970,8 @@
     </div>
     <p class="other reveal">Otras formas: servir en el Área Infantil, donar materiales u orar. <a class="link" href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a></p>
 
-    <div class="sponsors reveal">
+    <!-- Aliados ocultos por ahora. Para mostrarlos, quitar "hidden" y usar logos en escala de grises y semitransparentes (clase .sp-logo). -->
+    <div class="sponsors reveal" hidden>
       <div class="sp-h">
         <h3>Aliados del Prácticum 2026</h3>
         <p>Gracias. Los aliados de 2027 se anunciarán aquí.</p>
@@ -1003,11 +1006,9 @@
       <div class="vi-info reveal">
         <h2 id="t-vi" class="h2">Cómo llegar y qué llevar</h2>
         <div class="vi-rows">
-          <div class="vi-row"><span class="label">Fecha</span><p><strong>Por confirmar · 2027</strong><br />La publicaremos aquí y la enviaremos por correo a quienes tengan boleta.</p></div>
+          <div class="vi-row"><span class="label">Fecha</span><p><strong>Marzo 2027</strong></p></div>
           <div class="vi-row"><span class="label">Horario</span><p class="num">9:00 a.m. – 4:00 p.m.</p></div>
           <div class="vi-row"><span class="label">Lugar</span><p><strong>Iglesia de Convertidos a Cristo (ICC)</strong><br />Santo Domingo · <a href="https://maps.app.goo.gl/Gam5twUXUQkL1ZbA7" target="_blank" rel="noopener">Abrir en Google Maps</a></p></div>
-          <div class="vi-row"><span class="label">Acreditación y parqueo</span><p>Por confirmar.</p></div>
-          <div class="vi-row"><span class="label">Accesibilidad</span><p>Por confirmar. ¿Necesitas apoyo? <a href="mailto:ccrep.dom@gmail.com">Escríbenos</a>.</p></div>
           <div class="vi-row"><span class="label">Qué llevar</span><p>Biblia y bolígrafo. Los materiales del taller van por nuestra cuenta.</p></div>
         </div>
       </div>
@@ -1133,7 +1134,7 @@
         if(o){var bits=[];if(o.a)bits.push(o.a+(o.a===1?' adulto':' adultos'));if(o.k)bits.push(o.k+(o.k===1?' niño':' niños'));if(o.l)bits.push(o.l+(o.l===1?' almuerzo de adulto':' almuerzos de adulto'));if(bits.length)extra=' Tu pedido: '+bits.join(', ')+(o.t?' · total '+o.t:'')+'.';}
         sessionStorage.removeItem('pr27order');}catch(e){}
       n.classList.add('ok');
-      tx.textContent='Pago recibido. Gracias por reservar.'+extra+' Te enviaremos la fecha por correo.';
+      tx.textContent='Pago recibido. Gracias por reservar.'+extra+' Te enviaremos el día exacto por correo.';
       n.classList.add('show');
       document.getElementById('noticeClose').addEventListener('click',function(){n.classList.remove('show');});
     } else if(p==='cancelado'){
