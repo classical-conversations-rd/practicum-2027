@@ -221,12 +221,6 @@
   .tv-row p{font-size:18px}
 
   /* 04 Highlights */
-  .hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:56px;border-top:var(--puntos)}
-  .hl{padding:28px 26px 8px 0}
-  .hl + .hl{padding-left:26px;border-left:1px solid var(--filete-2)}
-  .hl .n{font-family:var(--serif-d);font-style:italic;font-size:40px;line-height:1;color:var(--slate)}
-  .hl h3{font-size:27px;font-weight:600;margin:18px 0 10px}
-  .hl p{font-size:17.5px;color:var(--pizarra);line-height:1.55}
   .take{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;margin-top:72px;padding:40px 0 0;border-top:var(--puntos)}
   .take h3{grid-column:1 / span 4;font-size:32px;font-weight:500}
   .take ul{grid-column:6 / span 7;list-style:none;columns:2;column-gap:32px}
@@ -250,18 +244,42 @@
   .slot.pause h3{font-style:italic;font-weight:500;color:var(--pizarra);font-size:23px}
   .pg-note{margin-top:22px;font-family:var(--sans);font-size:13.5px;color:var(--pizarra);line-height:1.55}
 
+  /* 04 Bento: lo que vivirás */
+  .bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:250px;gap:14px;margin-top:48px;
+    grid-template-areas:"a a b g" "a a c g" "d d e h"}
+  .bento > *{margin:0;border-radius:18px;overflow:hidden}
+  .b-a{grid-area:a}.b-b{grid-area:b}.b-c{grid-area:c}.b-d{grid-area:d}.b-e{grid-area:e}.b-g{grid-area:g}.b-h{grid-area:h}
+  .b-ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+  .b-ph{position:relative}
+  .b-cap{position:absolute;inset:auto 0 0 0;padding:70px 26px 24px;color:#fff;background:linear-gradient(to top,rgba(5,31,66,.88),rgba(5,31,66,.55) 55%,rgba(5,31,66,0))}
+  .b-cap .n{font-family:var(--serif-d);font-style:italic;font-size:26px;line-height:1;opacity:.8}
+  .b-cap h3{color:#fff;font-size:clamp(22px,1.9vw,28px);font-weight:600;margin:8px 0 4px;line-height:1.1}
+  .b-cap p{color:rgba(255,255,255,.9);font-size:16px;line-height:1.45;max-width:34ch}
+  .b-tx{display:flex;flex-direction:column;justify-content:flex-end;padding:26px 26px 28px}
+  .b-tx .n{font-family:var(--serif-d);font-style:italic;font-size:34px;line-height:1;margin-bottom:auto;opacity:.75}
+  .b-tx h3{font-size:clamp(24px,2.1vw,30px);font-weight:600;margin:28px 0 8px;line-height:1.1}
+  .b-tx p{font-size:17px;line-height:1.5}
+  .t-peach h3,.t-blue h3{color:var(--marino)}
+  .t-peach{background:#F5E0CF;color:var(--marino)}
+  .t-blue{background:#B5D4D9;color:var(--marino)}
+  .t-peach p,.t-blue p{color:#2A3A52}
+  @media (max-width:900px){
+    .bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:220px;
+      grid-template-areas:"a a" "a a" "b c" "d d" "e g" "h g"}
+  }
+  @media (max-width:520px){
+    .bento{gap:10px;grid-template-areas:"a a" "a a" "b c" "d d" "e e" "g h";grid-auto-rows:190px}
+    .b-tx{padding:20px}
+    .b-tx h3{font-size:22px;margin-top:18px}
+    .b-tx p{font-size:15.5px}
+  }
+
   /* Fotografías de la comunidad */
   .photo-wide{margin:56px 0 0}
   .photo-wide img{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:50% 40%}
-  .photo-trio{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin:56px 0 0}
-  .photo-trio figure{margin:0;height:clamp(260px,30vw,440px)}
-  .photo-trio img{display:block;width:100%;height:100%;object-fit:cover}
   .photo-cap{margin-top:12px;font-family:var(--sans);font-size:12.5px;color:var(--pizarra)}
   @media (max-width:760px){
     .photo-wide img{aspect-ratio:4/3}
-    .photo-trio{grid-template-columns:1fr 1fr;gap:10px}
-    .photo-trio figure{height:200px}
-    .photo-trio figure:first-child{grid-column:1 / -1;height:240px}
   }
 
   /* 06 Entrenador/a */
@@ -449,9 +467,6 @@
   @media(max-width:1060px){
     .hero-tx{grid-column:1 / span 7}
     .hero-fig{grid-column:8 / span 5}
-    .hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .hl:nth-child(3){padding-left:0;border-left:0}
-    .hl:nth-child(n+3){border-top:1px solid var(--filete-2);margin-top:24px}
     .sp-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
     .spn:nth-child(4){border-left:0}
     .spn:nth-child(n+4){border-top:1px solid var(--filete-2)}
@@ -489,9 +504,6 @@
     .stat + .stat{border-top:1px solid var(--filete-2)}
     .tv-row{grid-template-columns:1fr;gap:8px}
     .tv-row.h{display:none}
-    .hl-grid{grid-template-columns:1fr}
-    .hl,.hl + .hl{padding:24px 0 8px;border-left:0}
-    .hl + .hl{border-top:1px solid var(--filete-2);margin-top:16px}
     .take ul{columns:1}
     .slot{grid-template-columns:1fr;gap:6px}
     .slot .t{padding-top:0}
@@ -693,32 +705,16 @@
   <div class="wrap">
     <div class="sec-no reveal"><b>04</b> Lo que vivirás</div>
     <h2 id="t-hl" class="h2 reveal" style="max-width:760px">Qué te llevas del día</h2>
-    <div class="hl-grid reveal">
-      <div class="hl">
-        <span class="n" aria-hidden="true">i.</span>
-        <h3>Método clásico</h3>
-        <p>El trivium aplicado a la ciencia, para cualquier edad.</p>
-      </div>
-      <div class="hl">
-        <span class="n" aria-hidden="true">ii.</span>
-        <h3>Taller práctico</h3>
-        <p>La vela de Faraday y estaciones de experimentos.</p>
-      </div>
-      <div class="hl">
-        <span class="n" aria-hidden="true">iii.</span>
-        <h3>Comunidad</h3>
-        <p>Familias dominicanas que educan en casa, como tú.</p>
-      </div>
-      <div class="hl">
-        <span class="n" aria-hidden="true">iv.</span>
-        <h3>Área Infantil</h3>
-        <p>Ciencia por edades para tus hijos, con entrega segura.</p>
-      </div>
-    </div>
-    <div class="photo-trio reveal">
-      <figure><img style="object-position:50% 40%" src="img/pareja.jpg" width="1800" height="1200" loading="lazy" alt="Un matrimonio conversa sobre su cuaderno de trabajo durante un taller." /></figure>
-      <figure><img style="object-position:66% 50%" src="img/padres-mesa.jpg" width="1800" height="1200" loading="lazy" alt="Padres trabajando en mesas redondas con sus cuadernos durante el Prácticum 2026." /></figure>
-      <figure><img src="img/familia.jpg" width="1200" height="1800" loading="lazy" style="object-position:50% 60%" alt="Un padre agachado junto a su hija pequeña durante el Prácticum 2026." /></figure>
+    <div class="bento reveal">
+      <figure class="b-ph b-a"><img src="img/pareja.jpg" width="1800" height="1200" loading="lazy" style="object-position:50% 40%" alt="Un matrimonio conversa sobre su cuaderno de trabajo durante un taller." />
+        <figcaption class="b-cap"><span class="n" aria-hidden="true">i.</span><h3>Método clásico</h3><p>El trivium aplicado a la ciencia, para cualquier edad.</p></figcaption></figure>
+      <figure class="b-ph b-b"><img src="img/taller.jpg" width="1400" height="933" loading="lazy" style="object-position:55% 50%" alt="Manos de una madre completando su cuaderno de trabajo en el taller." />
+        <figcaption class="b-cap"><span class="n" aria-hidden="true">ii.</span><h3>Taller práctico</h3><p>La vela de Faraday y estaciones de experimentos.</p></figcaption></figure>
+      <figure class="b-ph b-c"><img src="img/madre-bebe.jpg" width="933" height="1400" loading="lazy" style="object-position:50% 30%" alt="Una madre sostiene a su bebé durante el Prácticum 2026." /></figure>
+      <figure class="b-ph b-g"><img src="img/familia.jpg" width="1200" height="1800" loading="lazy" style="object-position:50% 60%" alt="Un padre agachado junto a su hija pequeña durante el Prácticum 2026." /></figure>
+      <figure class="b-ph b-d"><img src="img/padres-mesa.jpg" width="1800" height="1200" loading="lazy" style="object-position:60% 55%" alt="Padres trabajando en mesas redondas con sus cuadernos durante el Prácticum 2026." /></figure>
+      <div class="b-tx b-e t-peach"><span class="n" aria-hidden="true">iii.</span><h3>Comunidad</h3><p>Familias dominicanas que educan en casa, como tú.</p></div>
+      <div class="b-tx b-h t-blue"><span class="n" aria-hidden="true">iv.</span><h3>Área Infantil</h3><p>Ciencia por edades para tus hijos, con entrega segura.</p></div>
     </div>
     <div class="take reveal">
       <h3>Material para casa <span class="tag prop">Propuesta</span></h3>
