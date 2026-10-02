@@ -250,6 +250,20 @@
   .slot.pause h3{font-style:italic;font-weight:500;color:var(--pizarra);font-size:23px}
   .pg-note{margin-top:22px;font-family:var(--sans);font-size:13.5px;color:var(--pizarra);line-height:1.55}
 
+  /* Fotografías de la comunidad */
+  .photo-wide{margin:56px 0 0}
+  .photo-wide img{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:50% 40%}
+  .photo-trio{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin:56px 0 0}
+  .photo-trio figure{margin:0;height:clamp(260px,30vw,440px)}
+  .photo-trio img{display:block;width:100%;height:100%;object-fit:cover}
+  .photo-cap{margin-top:12px;font-family:var(--sans);font-size:12.5px;color:var(--pizarra)}
+  @media (max-width:760px){
+    .photo-wide img{aspect-ratio:4/3}
+    .photo-trio{grid-template-columns:1fr 1fr;gap:10px}
+    .photo-trio figure{height:200px}
+    .photo-trio figure:first-child{grid-column:1 / -1;height:240px}
+  }
+
   /* 06 Entrenador/a */
   .sp-fig{grid-column:1 / span 4;margin:0}
   .sp-fig .plate{position:relative}
@@ -618,6 +632,10 @@
         </dl>
       </div>
     </div>
+    <figure class="photo-wide reveal">
+      <img src="img/comunidad-cc.jpg" width="1600" height="1067" loading="lazy" alt="Una entrenadora de Classical Conversations habla frente al logo de CC República Dominicana mientras un grupo de madres la escucha." />
+      <figcaption class="photo-cap">Comunidad Classical Conversations República Dominicana, 2026.</figcaption>
+    </figure>
     <!-- Dato de la página de historia de CC (classicalconversations.com): 11 estudiantes en 1997 -->
     <div class="stats reveal">
       <div class="stat"><div class="n num">1997</div><div class="l label">Fundado con 11 estudiantes</div></div>
@@ -696,6 +714,11 @@
         <h3>Área Infantil</h3>
         <p>Ciencia por edades para tus hijos, con entrega segura.</p>
       </div>
+    </div>
+    <div class="photo-trio reveal">
+      <figure><img src="img/padres-mesa.jpg" width="1600" height="1067" loading="lazy" alt="Madres sentadas a la mesa con libros y cuadernos, atentas a la sesión." /></figure>
+      <figure><img style="object-position:26% 60%" src="img/biblia.jpg" width="1600" height="1067" loading="lazy" alt="Una madre lee una Biblia abierta durante la sesión." /></figure>
+      <figure><img src="img/familia.jpg" width="1067" height="1600" loading="lazy" alt="Un padre carga a su bebé junto a otra madre de la comunidad." /></figure>
     </div>
     <div class="take reveal">
       <h3>Material para casa <span class="tag prop">Propuesta</span></h3>
