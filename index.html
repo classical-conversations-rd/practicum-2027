@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prácticum 2027 · Ciencias · Classical Conversations República Dominicana</title>
+<meta name="description" content="Prácticum 2027 de Classical Conversations en República Dominicana: ¿Cómo enseñar ciencias a nuestros hijos? Jornada de formación para padres en la Iglesia de Convertidos a Cristo, Santo Domingo. Fecha por confirmar. Boletas: US$30 / RD$1,800." />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#FBF6F2" />
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<!-- Open Graph / redes sociales. PENDIENTE: confirmar el dominio de Netlify antes de compartir; las URL og:* usan PENDIENTE-DOMINIO; reemplazar por el dominio real -->
+<meta property="og:title" content="Prácticum 2027 · ¿Cómo enseñar ciencias a nuestros hijos?" />
+<meta property="og:description" content="Leyendo el Libro de la Naturaleza: El Arte de la Observación. Jornada de formación para padres, Santo Domingo. Fecha por confirmar · 2027. Boletas: US$30 / RD$1,800." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://PENDIENTE-DOMINIO/" />
+<meta property="og:image" content="https://PENDIENTE-DOMINIO/img/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Planisferio copernicano de Andreas Cellarius, Harmonia Macrocosmica, 1660." />
+<meta property="og:locale" content="es_DO" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Prácticum 2027 · ¿Cómo enseñar ciencias a nuestros hijos?" />
+<meta name="twitter:description" content="Jornada de formación para padres en Santo Domingo. Fecha por confirmar · 2027. Boletas: US$30 / RD$1,800." />
+<meta name="twitter:image" content="https://PENDIENTE-DOMINIO/img/og.jpg" />
+
+<!--
+  Título del Prácticum 2027 (recomendado por la investigación, opción 1 de 3):
+    ¿Cómo enseñar ciencias a nuestros hijos? / Leyendo el Libro de la Naturaleza: El Arte de la Observación
+  Alternativas (pendientes de confirmación con Claudia, CC):
+    2. ¿Cómo despertar el asombro por las ciencias en nuestros hijos? / Los Cielos Cuentan: El Arte de Preguntar a la Creación
+    3. ¿Cómo enseñar ciencias sin perder la fe ni el asombro? / Pensando los Pensamientos de Dios: El Arte de Descubrir
+       (usar la idea de Kepler solo como paráfrasis o "atribuida a Kepler": no tiene fuente primaria localizada)
+  Fecha: "Fecha por confirmar · 2027" hasta que CC la confirme. No inventar una fecha.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    color-scheme:light;
+    /* Paleta Classical Conversations (verificada en su CSS), refinada para lectura editorial */
+    --marino:#051F42;
+    --marino-2:#16325A;
+    --marfil:#FBF6F2;
+    --papel:#FFFCF9;
+    --crema:#F5E9DD;
+    --crema-2:#F5E0CF;
+    --tinta:#1D2433;
+    --pizarra:#55657B;
+    --niebla:#CDD2D9;
+    --filete:rgba(5,31,66,.16);
+    --filete-2:rgba(5,31,66,.09);
+    --oro:#B8902F;
+    --oro-texto:#86671D;
+    --accion:#A6452F;
+    --accion-2:#8B3523;
+    --verde:#2F7A55;
+    --serif-d:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+    --serif:'EB Garamond',Georgia,'Times New Roman',serif;
+    --sans:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    --max:1200px;
+    --gut:clamp(16px,4vw,40px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;background:var(--marfil)}
+  body{
+    font-family:var(--serif);font-size:19px;line-height:1.6;color:var(--tinta);
+    background:var(--marfil);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;height:auto}
+  a{color:inherit}
+  h1,h2,h3,h4,.brand-tx b,.order-h h3{font-variant-numeric:lining-nums}
+  h1,h2,h3,h4{font-family:var(--serif-d);font-weight:600;color:var(--marino);line-height:1.06;letter-spacing:-.005em}
+  strong{font-weight:600;color:var(--marino)}
+  :focus-visible{outline:2px solid var(--accion);outline-offset:3px;border-radius:2px}
+  .skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--marino);color:var(--papel);padding:10px 16px;font-family:var(--sans);font-size:14px;text-decoration:none}
+  .skip:focus{top:12px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+  .num{font-variant-numeric:tabular-nums lining-nums}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* ---------- Rótulos ---------- */
+  .label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pizarra)}
+  .label.oro{color:var(--oro-texto)}
+  .sec-no{display:flex;align-items:baseline;gap:14px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pizarra);padding-top:18px;border-top:1px solid var(--marino);margin-bottom:34px}
+  .sec-no b{font-weight:600;color:var(--oro-texto);font-variant-numeric:tabular-nums}
+  .sec-no span{margin-left:auto;font-weight:500;letter-spacing:.08em;text-transform:none;font-size:13px}
+
+  /* ---------- Botones ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.01em;line-height:1.2;padding:14px 24px;border-radius:2px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color .2s,color .2s,border-color .2s}
+  .btn-primary{background:var(--accion);color:#fff}
+  .btn-primary:hover{background:var(--accion-2)}
+  .btn-line{background:transparent;color:var(--marino);border-color:var(--marino)}
+  .btn-line:hover{background:var(--marino);color:var(--papel)}
+  .btn-lg{padding:17px 30px;font-size:16px}
+  .link{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--marino);text-decoration:none;border-bottom:1px solid var(--oro);padding-bottom:2px;transition:color .2s,border-color .2s}
+  .link:hover{color:var(--accion);border-color:var(--accion)}
+  .link .ar{display:inline-block;transition:transform .2s}
+  .link:hover .ar{transform:translateX(3px)}
+
+  /* ---------- Aviso de pago ---------- */
+  .notice{display:none;background:var(--crema-2);border-bottom:1px solid var(--filete);font-family:var(--sans);font-size:15px;color:var(--marino)}
+  .notice.show{display:block}
+  .notice .wrap{display:flex;align-items:flex-start;gap:16px;padding-top:16px;padding-bottom:16px}
+  .notice p{flex:1;line-height:1.5}
+  .notice.ok{background:#E3F0E8}
+  .notice button{flex:none;background:none;border:1px solid var(--filete);border-radius:2px;font:inherit;font-size:13px;padding:6px 12px;cursor:pointer;color:var(--marino)}
+
+  /* ---------- Encabezado ---------- */
+  .top{position:sticky;top:0;z-index:80;background:rgba(251,246,242,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--filete-2)}
+  .top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex:none}
+  .brand img{width:64px;height:auto}
+  .brand-tx{display:flex;flex-direction:column;border-left:1px solid var(--filete);padding-left:14px;line-height:1.15}
+  .brand-tx b{font-family:var(--serif-d);font-size:21px;font-weight:600;color:var(--marino)}
+  .brand-tx small{font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--pizarra)}
+  .nav{display:flex;gap:24px;margin-left:auto;list-style:none}
+  .nav a{font-family:var(--sans);font-size:14.5px;color:var(--tinta);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+  .nav a:hover{color:var(--marino);border-color:var(--oro)}
+  .top .btn{padding:11px 18px;font-size:14px}
+  @media(max-width:1060px){.nav{display:none}.top .btn{margin-left:auto}}
+  @media(max-width:520px){.brand img{width:52px}.brand-tx b{font-size:18px}.brand-tx small{display:none}.top .wrap{height:64px;gap:12px}.top .btn{padding:10px 14px;font-size:13.5px}}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--marfil);padding:clamp(40px,6vw,88px) 0 0}
+  .hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center}
+  .hero-tx{grid-column:1 / span 6}
+  .hero-kick{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px}
+  .hero-kick .label + .label{padding-left:18px;border-left:1px solid var(--niebla)}
+  .hero h1{font-size:clamp(46px,6.1vw,86px);font-weight:500;line-height:.98;letter-spacing:-.018em}
+  .hero h1 em{font-style:italic;font-weight:500}
+  .hero .sub{font-family:var(--serif-d);font-style:italic;font-weight:500;font-size:clamp(22px,2.2vw,28px);color:var(--marino-2);margin-top:22px;line-height:1.25;max-width:560px}
+  .hero .sum{margin-top:22px;max-width:520px;color:var(--pizarra);font-size:19px}
+  .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:34px}
+  .hero-fig{grid-column:7 / span 6;margin:0}
+  .plate{background:var(--papel);border:1px solid var(--filete);padding:clamp(12px,1.6vw,22px);box-shadow:0 1px 0 rgba(5,31,66,.04),0 30px 60px -40px rgba(5,31,66,.35)}
+  .plate img{width:100%}
+  .cap{display:flex;gap:12px;margin-top:12px;font-family:var(--sans);font-size:12px;line-height:1.45;color:var(--pizarra)}
+  .cap b{flex:none;font-weight:600;color:var(--oro-texto);letter-spacing:.06em;text-transform:uppercase}
+  .cap i{font-style:italic}
+
+  /* Franja de datos prácticos */
+  .facts{margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--marino);border-bottom:1px solid var(--filete);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .fact{padding:22px 24px 24px 0}
+  .fact + .fact{padding-left:24px;border-left:1px solid var(--filete-2)}
+  .fact .v{display:block;font-family:var(--serif-d);font-size:24px;font-weight:600;color:var(--marino);line-height:1.15;margin-top:8px}
+  .fact .s{display:block;font-family:var(--sans);font-size:13.5px;color:var(--pizarra);margin-top:4px;line-height:1.4}
+
+  /* ---------- Secciones ---------- */
+  .sec{padding:clamp(72px,9vw,128px) 0}
+  .bg-papel{background:var(--papel)}
+  .bg-marfil{background:var(--marfil)}
+  .bg-crema{background:var(--crema)}
+  .h2{font-size:clamp(36px,4.6vw,60px);font-weight:500;letter-spacing:-.012em;line-height:1.02}
+  .h2 em{font-style:italic}
+  .lede{font-size:clamp(20px,1.7vw,23px);line-height:1.55;color:var(--tinta)}
+  .muted{color:var(--pizarra)}
+  .g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+
+  /* 01 Intro */
+  .intro-tx{grid-column:1 / span 7}
+  .intro-tx .lede{font-family:var(--serif-d);font-size:clamp(25px,2.4vw,32px);font-weight:500;line-height:1.38;color:var(--marino)}
+  .intro-tx .lede::first-letter{float:left;font-size:4.1em;line-height:.8;padding:.06em .1em 0 0;color:var(--oro);font-weight:500}
+  .intro-q{grid-column:9 / span 4;align-self:start;margin-top:12px;border-left:1px solid var(--oro);padding-left:26px}
+  .intro-q p{font-family:var(--serif-d);font-style:italic;font-size:24px;line-height:1.35;color:var(--marino)}
+  .intro-q cite{display:block;margin-top:14px;font-style:normal}
+
+  /* 02 CC */
+  .cc-head{grid-column:1 / span 5}
+  .cc-body{grid-column:7 / span 6}
+  .cc-body p + p{margin-top:18px}
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:64px;border-top:1px solid var(--filete)}
+  .stat{padding:26px 24px 0 0}
+  .stat + .stat{padding-left:24px;border-left:1px solid var(--filete-2)}
+  .stat .n{font-family:var(--serif-d);font-weight:500;font-size:clamp(46px,5vw,68px);line-height:1;color:var(--marino)}
+  .stat .l{margin-top:10px}
+
+  /* 03 Prácticum + trivium */
+  .pr-head{grid-column:1 / span 6}
+  .pr-fig{grid-column:8 / span 5;grid-row:1 / span 2;margin:0}
+  .pr-body{grid-column:1 / span 6;margin-top:28px}
+  .pr-body p + p{margin-top:18px}
+  .trivium{margin-top:72px;border-top:1px solid var(--marino)}
+  .tv-row{display:grid;grid-template-columns:2fr 4fr 6fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--filete)}
+  .tv-row.h{padding:14px 0;border-bottom-color:var(--filete-2)}
+  .tv-row h3{font-size:30px;font-weight:500}
+  .tv-row h3 small{display:block;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.04em;color:var(--pizarra);margin-top:6px}
+  .tv-row .tools{font-family:var(--sans);font-size:14.5px;line-height:1.6;color:var(--marino);font-weight:500}
+  .tv-row p{font-size:18px}
+
+  /* 04 Highlights */
+  .hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:56px;border-top:1px solid var(--filete)}
+  .hl{padding:28px 26px 8px 0}
+  .hl + .hl{padding-left:26px;border-left:1px solid var(--filete-2)}
+  .hl .n{font-family:var(--serif-d);font-style:italic;font-size:40px;line-height:1;color:var(--oro)}
+  .hl h3{font-size:27px;font-weight:600;margin:18px 0 10px}
+  .hl p{font-size:17.5px;color:var(--pizarra);line-height:1.55}
+  .take{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;margin-top:72px;padding:40px 0 0;border-top:1px solid var(--filete)}
+  .take h3{grid-column:1 / span 4;font-size:32px;font-weight:500}
+  .take ul{grid-column:6 / span 7;list-style:none;columns:2;column-gap:32px}
+  .take li{break-inside:avoid;padding:10px 0 10px 22px;position:relative;font-size:17.5px;border-bottom:1px solid var(--filete-2)}
+  .take li::before{content:"";position:absolute;left:0;top:21px;width:10px;height:1px;background:var(--oro)}
+
+  /* 05 Programa */
+  .pg-side{grid-column:1 / span 4}
+  .pg-side .sticky{position:sticky;top:110px}
+  .pg-side .plate{margin-top:36px;max-width:340px}
+  .pg-list{grid-column:6 / span 7}
+  .pg-flag{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accion-2);border:1px solid rgba(166,69,47,.35);padding:5px 10px;border-radius:2px;margin-top:22px}
+  .slot{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--filete)}
+  .slot:first-child{border-top:1px solid var(--marino)}
+  .slot .t{font-family:var(--sans);font-size:14px;font-weight:600;color:var(--marino);font-variant-numeric:tabular-nums;padding-top:6px}
+  .slot .t small{display:block;font-weight:500;color:var(--pizarra);font-size:12.5px;margin-top:3px}
+  .slot h3{font-size:26px;font-weight:600}
+  .slot .k{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--oro-texto);display:block;margin-bottom:6px}
+  .slot p{font-size:17.5px;color:var(--pizarra);margin-top:6px;line-height:1.55}
+  .slot.pause{background:transparent}
+  .slot.pause h3{font-style:italic;font-weight:500;color:var(--pizarra);font-size:23px}
+  .pg-note{margin-top:22px;font-family:var(--sans);font-size:13.5px;color:var(--pizarra);line-height:1.55}
+
+  /* 06 Entrenador/a */
+  .sp-fig{grid-column:1 / span 4;margin:0}
+  .sp-fig .plate{position:relative}
+  .sp-fig .tbd{position:absolute;right:-1px;top:-1px;background:var(--papel);border:1px solid var(--marino);font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--marino);padding:8px 14px;white-space:nowrap}
+  .sp-tx{grid-column:6 / span 7;align-self:center}
+  .sp-tx .h2{margin-top:6px}
+  .sp-tx p{margin-top:20px;max-width:620px}
+  .sp-prev{margin-top:30px;padding-top:22px;border-top:1px solid var(--filete);font-size:17px;color:var(--pizarra);max-width:620px}
+
+  /* 07 Boletas */
+  .tk-head{grid-column:1 / span 6}
+  .tk-head .lede{margin-top:20px}
+  .tk-layout{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;margin-top:56px;align-items:start}
+  .tk-list{grid-column:1 / span 6}
+  .tk-calc{grid-column:8 / span 5;position:sticky;top:100px}
+  .tkt{display:grid;grid-template-columns:1fr auto;gap:6px 20px;padding:24px 0;border-bottom:1px solid var(--filete)}
+  .tkt:first-child{border-top:1px solid var(--marino)}
+  .tkt h3{font-size:28px;font-weight:600}
+  .tkt .pr{text-align:right;font-family:var(--sans);font-variant-numeric:tabular-nums}
+  .tkt .pr b{display:block;font-size:22px;font-weight:700;color:var(--marino);line-height:1.1}
+  .tkt .pr small{display:block;font-size:14px;color:var(--pizarra);margin-top:3px}
+  .tkt p{grid-column:1 / -1;font-size:17px;color:var(--pizarra);line-height:1.5}
+  .tag{display:inline-block;vertical-align:middle;margin-left:8px;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--marino);border:1px solid var(--niebla);padding:3px 7px;border-radius:2px}
+  .incl{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+  .incl h4{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pizarra);margin-bottom:10px}
+  .incl ul{list-style:none}
+  .incl li{font-size:17px;padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--filete-2);line-height:1.45}
+  .incl li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:5px;border-left:1.5px solid var(--verde);border-bottom:1.5px solid var(--verde);transform:rotate(-45deg)}
+  .incl .no li::before{width:10px;height:0;border-left:0;border-bottom:1.5px solid var(--pizarra);transform:none;top:19px}
+  .policy{margin-top:34px;font-size:16.5px;color:var(--pizarra);line-height:1.55}
+  .policy b{color:var(--marino);font-weight:600}
+
+  .order{background:#fff;border:1px solid var(--filete);box-shadow:0 30px 60px -44px rgba(5,31,66,.45);font-family:var(--sans)}
+  .order-h{display:flex;justify-content:space-between;align-items:baseline;padding:22px 26px 16px;border-bottom:1px solid var(--filete-2)}
+  .order-h h3{font-family:var(--serif-d);font-size:28px;font-weight:600}
+  .order-b{padding:8px 26px 26px}
+  .seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--marino);border-radius:2px;margin:18px 0 6px}
+  .seg button{font-family:var(--sans);font-size:14px;font-weight:600;padding:11px 8px;background:#fff;color:var(--marino);border:0;cursor:pointer;line-height:1.25}
+  .seg button small{display:block;font-weight:500;font-size:11.5px;color:var(--pizarra);letter-spacing:.02em}
+  .seg button + button{border-left:1px solid var(--marino)}
+  .seg button[aria-pressed="true"]{background:var(--marino);color:#fff}
+  .seg button[aria-pressed="true"] small{color:#C9D3E2}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--filete-2)}
+  .row-l{min-width:0}
+  .row-l b{display:block;font-size:15.5px;font-weight:600;color:var(--marino)}
+  .row-l small{display:block;font-size:13px;color:var(--pizarra);margin-top:2px;font-variant-numeric:tabular-nums}
+  .stepper{display:flex;align-items:center;border:1px solid var(--niebla);border-radius:2px;flex:none}
+  .stepper button{width:40px;height:42px;border:0;background:#fff;color:var(--marino);font-size:20px;line-height:1;cursor:pointer;font-family:var(--sans)}
+  .stepper button:hover{background:var(--marfil)}
+  .stepper input{width:48px;height:42px;border:0;border-left:1px solid var(--niebla);border-right:1px solid var(--niebla);text-align:center;font-family:var(--sans);font-size:16px;font-weight:600;color:var(--marino);background:#fff;-moz-appearance:textfield;appearance:textfield;font-variant-numeric:tabular-nums}
+  .stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .promo{padding:14px 0 4px}
+  .promo summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--marino);list-style:none;display:flex;align-items:center;gap:8px}
+  .promo summary::-webkit-details-marker{display:none}
+  .promo summary::before{content:"+";display:inline-flex;width:18px;height:18px;align-items:center;justify-content:center;border:1px solid var(--niebla);font-size:13px;line-height:1}
+  .promo[open] summary::before{content:"\2212"}
+  .promo-f{display:flex;gap:8px;margin-top:12px}
+  .promo-f label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .promo-f input{flex:1;min-width:0;height:42px;border:1px solid var(--niebla);border-radius:2px;padding:0 12px;font-family:var(--sans);font-size:15px;text-transform:uppercase;color:var(--marino);background:#fff}
+  .promo-f button{height:42px;padding:0 16px;border:1px solid var(--marino);background:#fff;color:var(--marino);font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;border-radius:2px}
+  .promo-msg{font-size:13.5px;margin-top:8px;line-height:1.45;color:var(--pizarra)}
+  .promo-msg.ok{color:var(--verde);font-weight:600}
+  .lines{list-style:none;margin-top:16px;font-size:14.5px;font-variant-numeric:tabular-nums}
+  .lines li{display:flex;justify-content:space-between;gap:12px;padding:5px 0;color:var(--tinta)}
+  .lines li.disc{color:var(--verde);font-weight:600}
+  .total{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-top:1px solid var(--marino);margin-top:10px;padding-top:16px}
+  .total .tl{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--marino)}
+  .total .ta{text-align:right}
+  .total #tMain{display:block;font-family:var(--serif-d);font-size:44px;font-weight:600;color:var(--marino);line-height:.95;font-variant-numeric:tabular-nums lining-nums}
+  .total #tAlt{display:block;font-size:13px;color:var(--pizarra);margin-top:6px}
+  .pay-panel{margin-top:20px}
+  .pay-panel .btn{width:100%}
+  .trust{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:13px;color:var(--pizarra);line-height:1.5}
+  .trust svg{flex:none;margin-top:2px;color:var(--marino)}
+  .bank{list-style:none;margin:8px 0 16px;border:1px solid var(--filete-2);padding:6px 14px;background:var(--marfil)}
+  .bank li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;font-size:13.5px;color:var(--pizarra)}
+  .bank li + li{border-top:1px solid var(--filete-2)}
+  .bank li span{color:var(--marino);font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+  .order-f{padding:16px 26px;border-top:1px solid var(--filete-2);background:var(--marfil);font-size:13px;color:var(--pizarra);line-height:1.5}
+  .order-f a{display:inline-block;padding:4px 0;color:var(--marino);font-weight:600}
+  .fact .s a{display:inline-block;padding:4px 0}
+  .order-b .cancel-msg{margin:16px 0 4px;padding:12px 14px;background:var(--crema-2);border:1px solid var(--filete);font-size:14px;line-height:1.5;color:var(--marino)}
+  .rate{font-size:12.5px;color:var(--pizarra);margin-top:10px;text-align:right}
+  .pay-note{font-size:12.5px;color:var(--pizarra);margin-top:10px;line-height:1.5}
+  .tag.prop{margin-left:12px;color:var(--accion-2);border-color:rgba(166,69,47,.35)}
+
+  /* 08 Becas y patrocinadores */
+  .bk-head{grid-column:1 / span 7}
+  .bk-head .lede{margin-top:20px}
+  .bk-fig{grid-column:9 / span 4;grid-row:1 / span 2;margin:0}
+  .doors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:64px}
+  .door{background:var(--papel);border:1px solid var(--filete);border-top:2px solid var(--marino);padding:30px 28px 28px;display:flex;flex-direction:column}
+  .door .label{margin-bottom:14px}
+  .door h3{font-size:30px;font-weight:600}
+  .door p{font-size:17.5px;color:var(--pizarra);margin-top:12px;line-height:1.55}
+  .door .imp{font-family:var(--serif-d);font-style:italic;font-size:21px;color:var(--marino);margin-top:18px;padding-top:16px;border-top:1px solid var(--filete-2);line-height:1.3}
+  .door .acts{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:auto;padding-top:24px;align-items:center}
+  .door .acts .btn{padding:12px 18px;font-size:14px}
+  .other{margin-top:28px;font-size:17px;color:var(--pizarra)}
+  .sponsors{margin-top:96px}
+  .sp-h{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end}
+  .sp-h h3{grid-column:1 / span 6;font-size:clamp(30px,3.2vw,42px);font-weight:500}
+  .sp-h p{grid-column:8 / span 5;font-size:17px;color:var(--pizarra)}
+  .sp-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:36px;border-top:1px solid var(--marino);border-bottom:1px solid var(--filete)}
+  .spn{padding:30px 20px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:190px}
+  .spn + .spn{border-left:1px solid var(--filete-2)}
+  .spn .wm{font-family:var(--serif-d);font-weight:600;color:var(--marino);line-height:1.08;font-size:24px;min-height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .spn .wm.caps{font-family:var(--sans);font-weight:700;letter-spacing:.16em;font-size:16px}
+  .spn .wm.sc{font-variant:small-caps;letter-spacing:.06em}
+  .spn .wm small{display:block;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--pizarra);margin-top:6px}
+  .spn .role{margin-top:14px;font-family:var(--sans);font-size:13px;color:var(--pizarra);line-height:1.45;max-width:190px}
+  .spn .role b{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--oro-texto);margin-bottom:4px}
+
+  /* 09 Visita */
+  .vi-info{grid-column:1 / span 5}
+  .vi-map{grid-column:7 / span 6;position:relative;min-height:440px;border:1px solid var(--filete);background:var(--crema)}
+  .vi-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) sepia(.08)}
+  .vi-map .link{position:absolute;left:16px;bottom:16px;background:var(--papel);padding:10px 14px;border:1px solid var(--filete);border-bottom:1px solid var(--oro)}
+  .vi-rows{margin-top:36px;border-top:1px solid var(--marino)}
+  .vi-row{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--filete)}
+  .vi-row .label{padding-top:5px}
+  .vi-row p{font-size:18px;line-height:1.5}
+  .vi-row a{display:inline-block;padding:4px 0;color:var(--marino);text-decoration-color:var(--oro);text-underline-offset:3px}
+  .vi-row a:hover{color:var(--accion)}
+
+  /* 10 Preguntas */
+  .fq-head{grid-column:1 / span 4}
+  .fq-list{grid-column:6 / span 7}
+  .fq-group + .fq-group{margin-top:44px}
+  .fq-group > .label{display:block;margin-bottom:10px}
+  .fq{border-top:1px solid var(--filete)}
+  .fq-group .fq:last-child{border-bottom:1px solid var(--filete)}
+  .fq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:18px 0;font-family:var(--serif-d);font-size:23px;font-weight:600;color:var(--marino);line-height:1.25}
+  .fq summary::-webkit-details-marker{display:none}
+  .fq summary::after{content:"+";flex:none;font-family:var(--sans);font-weight:400;font-size:22px;line-height:1;color:var(--oro-texto);transition:transform .25s}
+  .fq[open] summary::after{transform:rotate(45deg)}
+  .fq summary:hover{color:var(--accion-2)}
+  .fq .a{padding:0 0 20px;font-size:17.5px;color:var(--tinta);max-width:640px;line-height:1.6}
+  .fq .a a{color:var(--marino);text-decoration-color:var(--oro);text-underline-offset:3px}
+
+  /* Final */
+  .final{text-align:center}
+  .final .q{font-family:var(--serif-d);font-style:italic;font-size:clamp(24px,2.4vw,30px);color:var(--marino);max-width:780px;margin:0 auto;line-height:1.35}
+  .final cite{display:block;margin-top:14px;font-style:normal}
+  .final .h2{max-width:860px;margin:56px auto 0}
+  .final .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 26px;align-items:center;margin-top:36px}
+  .rule-orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--oro);margin-bottom:40px}
+  .rule-orn i{display:block;width:72px;height:1px;background:currentColor}
+  .rule-orn b{display:block;width:7px;height:7px;border:1px solid currentColor;transform:rotate(45deg)}
+
+  /* Pie */
+  footer{background:var(--crema);border-top:1px solid var(--filete);padding:72px 0 36px;font-family:var(--sans);font-size:14.5px;color:var(--tinta)}
+  .ft{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:36px}
+  .ft-brand{grid-column:1 / span 4}
+  .ft-brand img{width:96px;margin-bottom:18px}
+  .ft-brand p{font-family:var(--serif);font-size:17px;font-style:italic;color:var(--pizarra);max-width:320px}
+  .ft-col{grid-column:span 2}
+  .ft-col.w{grid-column:span 4}
+  .ft h4{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pizarra);margin-bottom:14px}
+  .ft a{display:block;color:var(--marino);text-decoration:none;padding:3px 0}
+  .ft a:hover{color:var(--accion);text-decoration:underline;text-underline-offset:3px}
+  .ft p{line-height:1.6}
+  .ft-credits{margin-top:48px;padding-top:20px;border-top:1px solid var(--filete);font-size:12.5px;color:var(--pizarra);line-height:1.6}
+  .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:16px;font-size:12.5px;color:var(--pizarra)}
+
+  /* CTA flotante */
+  .fab{position:fixed;right:22px;bottom:22px;z-index:90;opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .3s ease,transform .3s ease;box-shadow:0 16px 34px -14px rgba(5,31,66,.55)}
+  .fab.show{opacity:1;transform:none;pointer-events:auto}
+
+  /* Movimiento */
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  .no-js .reveal{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .reveal,.reveal.in{opacity:1;transform:none;transition:none}
+    .fab,.link .ar,.fq summary::after,.btn{transition:none}
+  }
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:1060px){
+    .hero-tx{grid-column:1 / span 7}
+    .hero-fig{grid-column:8 / span 5}
+    .hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .hl:nth-child(3){padding-left:0;border-left:0}
+    .hl:nth-child(n+3){border-top:1px solid var(--filete-2);margin-top:24px}
+    .sp-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .spn:nth-child(4){border-left:0}
+    .spn:nth-child(n+4){border-top:1px solid var(--filete-2)}
+    .tk-list{grid-column:1 / span 7}
+    .tk-calc{grid-column:8 / span 5}
+    .doors{grid-template-columns:1fr}
+  }
+  @media(max-width:900px){
+    .hero-tx,.hero-fig,.intro-tx,.intro-q,.cc-head,.cc-body,.pr-head,.pr-fig,.pr-body,.pg-side,.pg-list,.sp-fig,.sp-tx,.tk-head,.tk-list,.tk-calc,.bk-head,.bk-fig,.vi-info,.vi-map,.fq-head,.fq-list,.take h3,.take ul,.sp-h h3,.sp-h p{grid-column:1 / -1}
+    .hero-fig{margin-top:44px}
+    .intro-q{margin-top:40px}
+    .cc-body{margin-top:24px}
+    .pr-fig{grid-row:auto;margin-top:36px;max-width:520px}
+    .pg-side .sticky{position:static}
+    .pg-side .plate,.pg-side .cap{display:none}
+    .pg-list{margin-top:36px}
+    .sp-fig{max-width:420px}
+    .sp-tx{margin-top:40px}
+    .tk-calc{position:static;margin-top:48px}
+    .bk-fig{grid-row:auto;margin-top:36px;max-width:420px}
+    .vi-map{margin-top:36px;min-height:340px}
+    .fq-list{margin-top:32px}
+    .take ul{margin-top:20px}
+    .sp-h p{margin-top:12px}
+    .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .fact:nth-child(3){padding-left:0;border-left:0}
+    .fact:nth-child(n+3){border-top:1px solid var(--filete-2)}
+  }
+  @media(max-width:640px){
+    body{font-size:18px}
+    .facts{grid-template-columns:1fr}
+    .fact,.fact + .fact{padding:18px 0;border-left:0}
+    .fact + .fact{border-top:1px solid var(--filete-2)}
+    .stats{grid-template-columns:1fr}
+    .stat,.stat + .stat{padding:22px 0;border-left:0}
+    .stat + .stat{border-top:1px solid var(--filete-2)}
+    .tv-row{grid-template-columns:1fr;gap:8px}
+    .tv-row.h{display:none}
+    .hl-grid{grid-template-columns:1fr}
+    .hl,.hl + .hl{padding:24px 0 8px;border-left:0}
+    .hl + .hl{border-top:1px solid var(--filete-2);margin-top:16px}
+    .take ul{columns:1}
+    .slot{grid-template-columns:1fr;gap:6px}
+    .slot .t{padding-top:0}
+    .incl{grid-template-columns:1fr;gap:20px}
+    .order-h,.order-b{padding-left:18px;padding-right:18px}
+    .order-f{padding:14px 18px}
+    .sp-grid{grid-template-columns:1fr 1fr}
+    .spn,.spn + .spn{border-left:0}
+    .spn:nth-child(even){border-left:1px solid var(--filete-2)}
+    .spn:nth-child(n+3){border-top:1px solid var(--filete-2)}
+    .spn{min-height:0;padding:24px 10px}
+    .spn .wm{font-size:21px;min-height:64px}
+    .vi-row{grid-template-columns:1fr;gap:4px}
+    .ft-brand,.ft-col,.ft-col.w{grid-column:1 / -1}
+    .fab{display:none}
+    .sec-no span{display:none}
+  }
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="notice" id="notice" role="status" aria-live="polite">
+  <div class="wrap">
+    <p id="noticeTx"></p>
+    <button type="button" id="noticeClose">Cerrar</button>
+  </div>
+</div>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Prácticum 2027, inicio">
+      <img src="cc-logo-navy.svg" alt="Classical Conversations" width="199" height="137" />
+      <span class="brand-tx"><b>Prácticum 2027</b><small>República Dominicana</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav">
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#entrenador">Entrenador</a></li>
+        <li><a href="#boletas">Boletas</a></li>
+        <li><a href="#apoyo">Becas y patrocinio</a></li>
+        <li><a href="#visita">Visita</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#boletas">Comprar boletas</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-tx">
+        <div class="hero-kick">
+          <span class="label oro">Prácticum para padres</span>
+          <span class="label">Ciencias · 2027</span>
+        </div>
+        <h1>¿Cómo enseñar <em>ciencias</em> a nuestros hijos?</h1>
+        <p class="sub">Leyendo el Libro de la Naturaleza: El Arte de la Observación</p>
+        <p class="sum">Un día de formación para padres que educan en casa: el método clásico aplicado a la ciencia, un taller práctico de experimentos y una comunidad que camina contigo.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#boletas">Comprar boletas</a>
+          <a class="link" href="#programa">Ver el programa <span class="ar" aria-hidden="true">&rarr;</span></a>
+          <a class="link" href="mailto:ccrep.dom@gmail.com?subject=Av%C3%ADsame%20la%20fecha%20del%20Pr%C3%A1cticum%202027">Avísame cuando se confirme la fecha</a>
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <div class="plate">
+          <img src="img/cellarius.jpg" width="1400" height="1208" alt="Grabado iluminado del sistema copernicano: el Sol al centro, las órbitas de los planetas en anillos y los signos del zodiaco alrededor, con dos astrónomos sentados en las esquinas inferiores." fetchpriority="high" />
+        </div>
+        <figcaption class="cap"><b>Lám. I</b><span>Andreas Cellarius, <i>Harmonia Macrocosmica</i>, 1660. Planisferio copernicano. Dominio público, vía Wikimedia Commons.</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- Franja de datos prácticos (patrón nbm.org / St Paul's) -->
+    <dl class="facts">
+      <div class="fact">
+        <dt class="label">Fecha</dt>
+        <dd><span class="v">Fecha por confirmar · 2027</span><span class="s">La anunciaremos aquí y por correo</span></dd>
+      </div>
+      <div class="fact">
+        <dt class="label">Horario</dt>
+        <dd><span class="v num">9:00 a.m. – 4:00 p.m.</span><span class="s">Un día completo</span></dd>
+      </div>
+      <div class="fact">
+        <dt class="label">Lugar</dt>
+        <dd><span class="v">Iglesia de Convertidos a Cristo</span><span class="s">Santo Domingo · <a href="#visita">Cómo llegar</a></span></dd>
+      </div>
+      <div class="fact">
+        <dt class="label">Boletas</dt>
+        <dd><span class="v num">US$30 · RD$1,800</span><span class="s">Por adulto · niños con almuerzo incluido</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 01 INTRO ============ -->
+<section class="sec bg-papel" aria-labelledby="t-intro">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>01</b> Introducción <span>Segunda edición en República Dominicana</span></div>
+    <h2 id="t-intro" class="sr">Introducción</h2>
+    <div class="g12">
+      <div class="intro-tx reveal">
+        <p class="lede">En 2026 nos reunimos por primera vez para aprender a enseñar gramática. En 2027 volvemos a la Iglesia de Convertidos a Cristo con un tema nuevo: las ciencias. Un día para ti, mamá y papá, para que no eduques en soledad, sino con un método, una cosmovisión y una comunidad, y regreses a casa con herramientas concretas para explorar la creación junto a tus hijos.</p>
+      </div>
+      <blockquote class="intro-q reveal">
+        <p>«Los cielos cuentan la gloria de Dios, y el firmamento anuncia la obra de sus manos.»</p>
+        <cite class="label oro">Salmo 19:1</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 QUÉ ES CC ============ -->
+<section class="sec bg-marfil" aria-labelledby="t-cc">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>02</b> Quiénes somos</div>
+    <div class="g12">
+      <div class="cc-head reveal">
+        <h2 id="t-cc" class="h2">¿Qué es Classical Conversations?</h2>
+      </div>
+      <div class="cc-body reveal">
+        <p>Classical Conversations (CC) es un programa de educación clásica cristiana que ayuda a los padres a educar a sus hijos en casa, no en soledad, sino en comunidad. Su premisa es sencilla: <strong>los padres son los mejores maestros de sus hijos</strong>, y su misión es «conocer a Dios y darlo a conocer».</p>
+        <p>CC ofrece tres cosas: un <strong>método probado</strong> (el modelo clásico de gramática, dialéctica y retórica), una <strong>estructura por etapas</strong> (Foundations, Essentials y Challenge) y una <strong>comunidad</strong> de familias que se reúnen cada semana para aprender juntas.</p>
+        <!-- Dato de la página de historia de CC (classicalconversations.com): 11 estudiantes en 1997 -->
+        <p class="muted">Empezó con apenas 11 estudiantes. Hoy es un movimiento global.</p>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="n num">1997</div><div class="l label">Año de fundación</div></div>
+      <div class="stat"><div class="n num">+45,000</div><div class="l label">Familias educan en casa hoy</div></div>
+      <div class="stat"><div class="n num">50</div><div class="l label">Países donde está presente</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 QUÉ ES UN PRÁCTICUM / POR QUÉ CIENCIAS ============ -->
+<section class="sec bg-papel" id="practicum" aria-labelledby="t-pr">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>03</b> El evento</div>
+    <div class="g12">
+      <div class="pr-head reveal">
+        <h2 id="t-pr" class="h2">¿Qué es un Prácticum, y por qué <em>ciencias</em>?</h2>
+      </div>
+      <figure class="pr-fig reveal">
+        <div class="plate"><img src="img/merian.jpg" width="800" height="1101" loading="lazy" alt="Grabado coloreado de una flor y un racimo de banano, con una mariposa nocturna y una oruga." /></div>
+        <figcaption class="cap"><b>Lám. II</b><span>Maria Sibylla Merian, <i>Metamorphosis insectorum Surinamensium</i>, 1705. Flor y fruto de banano. Dominio público.</span></figcaption>
+      </figure>
+      <div class="pr-body reveal">
+        <p class="lede">Un Prácticum es una jornada de un día que equipa a los padres con el método de educación clásica de Classical Conversations. Es un espacio para capacitarte, renovarte y reunirte con otras familias antes del año escolar.</p>
+        <p>Cada año tiene un tema. En 2027 miramos la ciencia como la miró la tradición cristiana: leer el «libro de las obras de Dios» con atención, paciencia y asombro. No necesitas ser científico ni tener todas las respuestas; necesitas aprender a observar, a preguntar y a registrar junto a tus hijos.</p>
+        <p class="muted">Francis Bacon pedía estudiar el libro de la palabra de Dios y el libro de sus obras, y aplicar ambos «a la caridad y no a la hinchazón; al uso y no a la ostentación» (<i>The Advancement of Learning</i>, 1605).</p>
+      </div>
+    </div>
+
+    <div class="trivium reveal" role="table" aria-label="El trivium aplicado a la ciencia">
+      <div class="tv-row h" role="row">
+        <span class="label" role="columnheader">Etapa</span>
+        <span class="label" role="columnheader">Herramientas de CC</span>
+        <span class="label" role="columnheader">Aplicadas a la ciencia</span>
+      </div>
+      <div class="tv-row" role="row">
+        <h3 role="cell">Gramática<small>Foundations y Essentials</small></h3>
+        <div class="tools" role="cell">Nombrar · Atender · Memorizar · Expresar · Narrar</div>
+        <p role="cell">Nombrar y clasificar como Linneo, observar diferencias, memorizar huesos, planetas y elementos, y contar la historia de un científico.</p>
+      </div>
+      <div class="tv-row" role="row">
+        <h3 role="cell">Dialéctica<small>Challenge (primeros niveles)</small></h3>
+        <div class="tools" role="cell">Definición · Comparación · Relación · Circunstancia · Testimonio</div>
+        <p role="cell">El experimento como pregunta: ¿qué es?, ¿en qué se parece?, ¿qué causa qué?, ¿bajo qué condiciones?, ¿qué dicen otros observadores?</p>
+      </div>
+      <div class="tv-row" role="row">
+        <h3 role="cell">Retórica<small>Challenge (niveles superiores)</small></h3>
+        <div class="tools" role="cell">Invención · Disposición · Elocución · Memoria · Entrega</div>
+        <p role="cell">Presentar lo descubierto: elegir la gran idea, ordenar hallazgos y exponerlos con claridad, como en la feria de ciencias de Challenge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 HIGHLIGHTS ============ -->
+<section class="sec bg-marfil" aria-labelledby="t-hl">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>04</b> Lo que vivirás</div>
+    <h2 id="t-hl" class="h2 reveal" style="max-width:760px">Un día para equiparte</h2>
+    <div class="hl-grid reveal">
+      <div class="hl">
+        <span class="n" aria-hidden="true">i.</span>
+        <h3>El método clásico</h3>
+        <p>Cómo la gramática, la dialéctica y la retórica enseñan a tu hijo a aprender ciencia, a cualquier edad.</p>
+      </div>
+      <div class="hl">
+        <span class="n" aria-hidden="true">ii.</span>
+        <h3>Taller práctico</h3>
+        <p>«La vela de Faraday» y estaciones de experimentos sencillos, con cuaderno de laboratorio y de naturaleza.</p>
+      </div>
+      <div class="hl">
+        <span class="n" aria-hidden="true">iii.</span>
+        <h3>Comunidad</h3>
+        <p>Conecta con otras familias dominicanas que comparten el mismo corazón. No estás solo en este camino.</p>
+      </div>
+      <div class="hl">
+        <span class="n" aria-hidden="true">iv.</span>
+        <h3>Área Infantil</h3>
+        <p>Mientras te formas, tus hijos exploran con actividades de ciencia por edades, en un espacio cuidado y con entrega segura.</p>
+      </div>
+    </div>
+    <div class="take reveal">
+      <h3>Lo que te llevas a casa <span class="tag prop">Propuesta, sujeta a confirmación</span></h3>
+      <ul>
+        <li>Cuaderno de trabajo impreso del Prácticum</li>
+        <li>Guía de una página: las herramientas del trivium aplicadas a la ciencia</li>
+        <li>Plantilla de hoja de laboratorio: qué usamos, qué hicimos, qué aprendimos</li>
+        <li>Plantilla de cuaderno de naturaleza</li>
+        <li>Lista de experimentos con materiales de casa</li>
+        <li>Lecturas y biografías de científicos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 PROGRAMA ============ -->
+<section class="sec bg-papel" id="programa" aria-labelledby="t-pg">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>05</b> Programa</div>
+    <div class="g12">
+      <div class="pg-side">
+        <div class="sticky reveal">
+          <h2 id="t-pg" class="h2">El programa del día</h2>
+          <p class="lede muted" style="margin-top:18px">Un día completo, de 9:00 a.m. a 4:00 p.m., que recorre la ciencia con las tres etapas del trivium.</p>
+          <span class="pg-flag">Programa preliminar</span>
+          <figure class="plate" style="margin-top:36px">
+            <img src="img/galileo.jpg" width="800" height="1110" loading="lazy" alt="Cinco dibujos a tinta de la Luna en distintas fases, con cráteres y sombras." />
+          </figure>
+          <p class="cap"><b>Lám. III</b><span>Galileo Galilei, dibujos de la Luna, <i>Sidereus Nuncius</i>, 1610. Dominio público.</span></p>
+        </div>
+      </div>
+      <ol class="pg-list reveal" style="list-style:none">
+        <li class="slot">
+          <div class="t">9:00 – 9:30<small>30 min</small></div>
+          <div><span class="k">Apertura</span><h3>Bienvenida</h3><p>Oración, bienvenida a las familias y lectura del Salmo 19:1-6 en voz alta.</p></div>
+        </li>
+        <li class="slot">
+          <div class="t">9:30 – 10:30<small>60 min</small></div>
+          <div><span class="k">Sesión 1</span><h3>Por qué ciencia, por qué clásica</h3><p>Los dos libros de Bacon: la Palabra y las obras de Dios. El trivium de la ciencia.</p></div>
+        </li>
+        <li class="slot pause">
+          <div class="t">10:30 – 10:50<small>20 min</small></div>
+          <div><h3>Café y convivencia</h3></div>
+        </li>
+        <li class="slot">
+          <div class="t">10:50 – 12:00<small>70 min</small></div>
+          <div><span class="k">Sesión 2 · Gramática</span><h3>El arte de nombrar y atender</h3><p>Linneo y Génesis 2. Clasificar, observar y memorizar con canciones y tarjetas.</p></div>
+        </li>
+        <li class="slot pause">
+          <div class="t">12:00 – 1:00<small>60 min</small></div>
+          <div><h3>Almuerzo</h3><p>Los niños almuerzan en el Área Infantil (incluido en su boleta).</p></div>
+        </li>
+        <li class="slot">
+          <div class="t">1:00 – 2:15<small>75 min</small></div>
+          <div><span class="k">Taller práctico</span><h3>La vela de Faraday</h3><p>Estaciones de experimentos en equipos de padres y cuaderno de laboratorio de tres preguntas: qué usamos, qué hicimos, qué aprendimos.</p></div>
+        </li>
+        <li class="slot">
+          <div class="t">2:15 – 3:15<small>60 min</small></div>
+          <div><span class="k">Sesión 3 · Dialéctica y retórica</span><h3>Preguntar y presentar</h3><p>Los cinco tópicos aplicados a un fenómeno. Mendel y la paciencia del registro. Cómo acompañar una feria de ciencias.</p></div>
+        </li>
+        <li class="slot">
+          <div class="t">3:15 – 3:45<small>30 min</small></div>
+          <div><span class="k">Plenaria</span><h3>Vocación y fe</h3><p>Newton, Pascal y la ciencia al servicio de la caridad. Preguntas y respuestas.</p></div>
+        </li>
+        <li class="slot">
+          <div class="t">3:45 – 4:00<small>15 min</small></div>
+          <div><span class="k">Cierre</span><h3>Compromiso y bendición</h3><p>Material para llevar, próximos pasos en Foundations, Essentials y Challenge, y oración final.</p></div>
+        </li>
+      </ol>
+    </div>
+    <p class="pg-note reveal" style="max-width:none">Horarios y contenidos sujetos a confirmación con Classical Conversations. Publicaremos el programa final junto con la fecha.</p>
+  </div>
+</section>
+
+<!-- ============ 06 ENTRENADOR/A ============ -->
+<section class="sec bg-crema" id="entrenador" aria-labelledby="t-sp">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>06</b> Entrenador o entrenadora</div>
+    <div class="g12">
+      <figure class="sp-fig reveal">
+        <div class="plate">
+          <img src="img/hooke.jpg" width="1100" height="825" loading="lazy" alt="Grabado detallado de una pulga vista al microscopio, con sus patas y segmentos rotulados con letras." />
+          <span class="tbd">Por anunciar</span>
+        </div>
+        <figcaption class="cap"><b>Lám. IV</b><span>Robert Hooke, <i>Micrographia</i>, 1665. La pulga. Dominio público.</span></figcaption>
+      </figure>
+      <div class="sp-tx reveal">
+        <span class="label oro">Quién nos guiará</span>
+        <h2 id="t-sp" class="h2">Entrenador por confirmar</h2>
+        <p>Classical Conversations asignará a la persona que dirigirá el Prácticum 2027 de Ciencias. Será alguien con experiencia en educación clásica cristiana y en el acompañamiento de familias que educan en casa. Publicaremos aquí su nombre, foto y trayectoria en cuanto se confirme.</p>
+        <p class="sp-prev">En 2026 nos acompañó <strong>Araceli Day</strong>, Directora Académica de Classical Conversations para las comunidades de habla hispana, desde México.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Política de cambios/reembolso: redactada según la propuesta de la revisión; confirmar con José -->
+<!-- ============ 07 BOLETAS ============ -->
+<section class="sec bg-papel" id="boletas" aria-labelledby="t-tk">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>07</b> Boletas <span>Pago seguro en línea o por transferencia</span></div>
+    <div class="g12">
+      <div class="tk-head reveal">
+        <h2 id="t-tk" class="h2">Boletas: US$30 por adulto</h2>
+        <p class="lede muted">Los mismos precios de 2026. Elige cuántas boletas necesitas, mira tu total en dólares y en pesos, y paga en línea o por transferencia.</p>
+      </div>
+    </div>
+
+    <div class="tk-layout">
+      <div class="tk-list reveal">
+        <div class="tkt">
+          <h3>Adulto</h3>
+          <div class="pr"><b>US$30</b><small>RD$1,800</small></div>
+          <p>Jornada completa de 9:00 a.m. a 4:00 p.m. con todas las sesiones y el taller práctico.</p>
+        </div>
+        <div class="tkt">
+          <h3>Niño <span class="tag">Incluye almuerzo</span></h3>
+          <div class="pr"><b>US$12</b><small>RD$700</small></div>
+          <p>Área Infantil con actividades de ciencia por edades y entrega segura al final del día.</p>
+        </div>
+        <div class="tkt">
+          <h3>Almuerzo de adulto <span class="tag">Opcional</span></h3>
+          <div class="pr"><b>US$13</b><small>RD$780</small></div>
+          <p>Para adultos que quieran almorzar en la sede. Puedes traer tu propio almuerzo.</p>
+        </div>
+
+        <div class="incl">
+          <div>
+            <h4>Incluye</h4>
+            <ul>
+              <li>Todas las sesiones y el taller práctico</li>
+              <li>Material de apoyo (por confirmar)</li>
+              <li>Almuerzo de los niños</li>
+            </ul>
+          </div>
+          <div class="no">
+            <h4>No incluye</h4>
+            <ul>
+              <li>Almuerzo de adulto (se añade aparte)</li>
+              <li>Transporte</li>
+            </ul>
+          </div>
+        </div>
+        <p class="policy"><b>Sin cargos adicionales:</b> el total que ves es el que pagas. <b>Descuentos:</b> si llegaste con un enlace de descuento (por ejemplo, familias Home Life Academy), se aplica solo. <b>¿No puedes pagar?</b> <a class="link" href="#apoyo">Solicita una beca</a>.</p>
+      </div>
+
+      <aside class="tk-calc reveal" id="calc" aria-labelledby="t-order">
+        <div class="order">
+          <div class="order-h">
+            <h3 id="t-order">Tu pedido</h3>
+            <span class="label">Prácticum 2027</span>
+          </div>
+          <div class="order-b">
+            <div class="seg" role="group" aria-label="Forma de pago">
+              <button type="button" class="pm" data-method="card" aria-pressed="true">Tarjeta en línea<small>Se cobra en US$</small></button>
+              <button type="button" class="pm" data-method="transfer" aria-pressed="false">Transferencia<small>Banco Popular · RD$</small></button>
+            </div>
+
+            <div class="row">
+              <div class="row-l"><b id="lbAd">Adultos</b><small class="pi-price" data-usd="US$30" data-dop="RD$1,800">US$30 c/u</small></div>
+              <div class="stepper">
+                <button type="button" class="cstep" data-target="qAd" data-d="-1" aria-label="Menos adultos">&minus;</button>
+                <input id="qAd" type="number" min="0" max="50" inputmode="numeric" value="2" aria-labelledby="lbAd" />
+                <button type="button" class="cstep" data-target="qAd" data-d="1" aria-label="Más adultos">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-l"><b id="lbNi">Niños</b><small class="pi-price" data-usd="US$12" data-dop="RD$700">US$12 c/u · incluye almuerzo</small></div>
+              <div class="stepper">
+                <button type="button" class="cstep" data-target="qNi" data-d="-1" aria-label="Menos niños">&minus;</button>
+                <input id="qNi" type="number" min="0" max="50" inputmode="numeric" value="0" aria-labelledby="lbNi" />
+                <button type="button" class="cstep" data-target="qNi" data-d="1" aria-label="Más niños">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-l"><b id="lbCo">Almuerzo de adulto</b><small class="pi-price" data-usd="US$13" data-dop="RD$780">US$13 c/u · opcional</small></div>
+              <div class="stepper">
+                <button type="button" class="cstep" data-target="qCo" data-d="-1" aria-label="Menos almuerzos de adulto">&minus;</button>
+                <input id="qCo" type="number" min="0" max="50" inputmode="numeric" value="0" aria-labelledby="lbCo" />
+                <button type="button" class="cstep" data-target="qCo" data-d="1" aria-label="Más almuerzos de adulto">+</button>
+              </div>
+            </div>
+
+            <details class="promo" id="promoBox">
+              <summary>¿Tienes un código de descuento?</summary>
+              <div class="promo-f">
+                <label for="promoIn">Código de descuento</label>
+                <input id="promoIn" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Escribe tu código" />
+                <button type="button" id="promoBtn">Aplicar</button>
+              </div>
+              <p class="promo-msg" id="promoMsg" aria-live="polite"></p>
+            </details>
+
+            <ul class="lines" id="lines" aria-live="polite"></ul>
+            <div class="total">
+              <span class="tl">Total</span>
+              <div class="ta">
+                <strong id="tMain">US$60</strong>
+                <span id="tAlt">Equivale a RD$3,600</span>
+              </div>
+            </div>
+            <p class="rate">Tasa del evento: US$1 = RD$60</p>
+
+            <div class="pay-panel" id="panelCard">
+              <a id="ctaCard" class="btn btn-primary btn-lg" href="#calc">Continuar al pago seguro</a>
+              <p class="pay-note">Cambio de nombre hasta 7 días antes, sin costo. Reembolso solo si el evento se cancela.</p>
+              <p class="trust">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
+                <span>Te llevaremos a la página segura de Stripe, en español. Allí escribes tu nombre, correo y teléfono. No guardamos los datos de tu tarjeta. El cobro es en dólares (US$).</span>
+              </p>
+            </div>
+
+            <div class="pay-panel" id="panelTransfer" hidden>
+              <ul class="bank">
+                <li>Banco <span>Banco Popular · Ahorros</span></li>
+                <li>No. de cuenta <span>084-753-4500</span></li>
+                <li>Titular <span>Katerine Fernández</span></li>
+                <li>Cédula <span>001-1642619-8</span></li>
+              </ul>
+              <a id="ctaWa" class="btn btn-primary btn-lg" href="https://wa.me/18492016825" target="_blank" rel="noopener">Ya transferí · enviar comprobante</a>
+              <p class="trust">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                <span>Transfiere el total en pesos y envía el comprobante por WhatsApp. Tu cupo queda confirmado cuando respondamos.</span>
+              </p>
+            </div>
+          </div>
+          <div class="order-f">¿Dudas con tu compra? Escribe a José Genao Pilarte: <a href="https://wa.me/18492016825" target="_blank" rel="noopener">WhatsApp (849) 201-6825</a> o <a href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a>.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 BECAS Y PATROCINADORES ============ -->
+<section class="sec bg-marfil" id="apoyo" aria-labelledby="t-bk">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>08</b> Becas y patrocinio</div>
+    <div class="g12">
+      <div class="bk-head reveal">
+        <h2 id="t-bk" class="h2">Que ninguna familia se quede fuera</h2>
+        <p class="lede muted">Los patrocinios financian <strong>becas para familias que no pueden pagar</strong> su boleta y los <strong>regalos</strong> que reciben los asistentes. Puedes pedir apoyo o darlo: las dos puertas están abiertas.</p>
+      </div>
+      <figure class="bk-fig reveal">
+        <div class="plate"><img src="img/haeckel.jpg" width="800" height="1118" loading="lazy" alt="Lámina de Haeckel con formas de organismos marinos dispuestas en simetría." /></div>
+        <figcaption class="cap"><b>Lám. V</b><span>Ernst Haeckel, <i>Kunstformen der Natur</i>, 1904. Dominio público.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="doors">
+      <article class="door reveal">
+        <span class="label oro">Para familias</span>
+        <h3>Solicitar una beca</h3>
+        <p>Si quieres asistir y el costo es un obstáculo, escríbenos. Solo necesitamos tu nombre, un teléfono y cuántos adultos y niños vendrían. Tu solicitud es confidencial.</p>
+        <p class="imp">Nadie más sabrá quién recibe una beca.</p>
+        <div class="acts">
+          <a class="btn btn-line" href="mailto:ccrep.dom@gmail.com?subject=Solicitud%20de%20beca%20%E2%80%93%20Pr%C3%A1cticum%202027&amp;body=Hola%20Jos%C3%A9%2C%20quisiera%20solicitar%20una%20beca%20para%20el%20Pr%C3%A1cticum%202027.%0A%0ANombre%3A%0ATel%C3%A9fono%3A%0AAdultos%3A%0ANi%C3%B1os%3A%0AComentario%20(opcional)%3A">Solicitar beca</a>
+          <a class="link" href="https://wa.me/18492016825?text=Hola%20Jos%C3%A9%2C%20quisiera%20solicitar%20una%20beca%20para%20el%20Pr%C3%A1cticum%202027." target="_blank" rel="noopener">Por WhatsApp <span class="ar" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="door reveal">
+        <span class="label oro">Para personas</span>
+        <h3>Patrocinar una familia</h3>
+        <p>Regala a otra familia un día de formación. Puedes cubrir una boleta, una familia completa o el monto que desees, y hacerlo de forma anónima si lo prefieres.</p>
+        <p class="imp num">US$30 (RD$1,800) cubren la boleta de un adulto.</p>
+        <div class="acts">
+          <a class="btn btn-primary" href="mailto:ccrep.dom@gmail.com?subject=Quiero%20patrocinar%20%E2%80%93%20Pr%C3%A1cticum%202027&amp;body=Hola%20Jos%C3%A9%2C%20quiero%20patrocinar%20a%20una%20familia%20en%20el%20Pr%C3%A1cticum%202027.%0A%0ANombre%3A%0ATel%C3%A9fono%3A%0AAporte%20(boletas%20o%20monto)%3A%0A%C2%BFPrefieres%20ser%20an%C3%B3nimo%3F%3A">Quiero patrocinar</a>
+          <a class="link" href="https://wa.me/18492016825?text=Hola%20Jos%C3%A9%2C%20quiero%20patrocinar%20a%20una%20familia%20en%20el%20Pr%C3%A1cticum%202027." target="_blank" rel="noopener">Por WhatsApp <span class="ar" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="door reveal">
+        <span class="label oro">Para empresas e iglesias</span>
+        <h3>Patrocinar el evento</h3>
+        <p>Apoya con un aporte, con productos o con servicios (impresión, café, regalos). Conversemos sobre la forma que mejor se ajuste a tu organización.</p>
+        <p class="imp">Tu aporte se convierte en becas y regalos para las familias.</p>
+        <div class="acts">
+          <a class="btn btn-line" href="mailto:ccrep.dom@gmail.com?subject=Patrocinio%20del%20Pr%C3%A1cticum%202027&amp;body=Hola%20Jos%C3%A9%2C%20nos%20interesa%20patrocinar%20el%20Pr%C3%A1cticum%202027.%0A%0AOrganizaci%C3%B3n%3A%0AContacto%3A%0ATel%C3%A9fono%3A%0ATipo%20de%20aporte%3A">Escribir a José</a>
+          <a class="link" href="https://wa.me/18492016825?text=Hola%20Jos%C3%A9%2C%20nos%20interesa%20patrocinar%20el%20Pr%C3%A1cticum%202027." target="_blank" rel="noopener">Por WhatsApp <span class="ar" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="other reveal">Otras formas de apoyar: servir como voluntario en el Área Infantil, donar materiales para el taller de ciencias u orar por las familias. Escríbenos a <a class="link" href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a>.</p>
+
+    <div class="sponsors reveal">
+      <div class="sp-h">
+        <h3>Quienes hicieron posible el Prácticum 2026</h3>
+        <p>Gracias a estas instituciones la primera edición fue posible. Los patrocinadores de 2027 se anunciarán aquí.</p>
+      </div>
+      <ul class="sp-grid" style="list-style:none">
+        <li class="spn">
+          <span class="wm">Iglesia de Convertidos a Cristo<small>ICC · Santo Domingo</small></span>
+          <span class="role"><b>Sede anfitriona</b>Nos abrió sus puertas para el evento.</span>
+        </li>
+        <li class="spn">
+          <span class="wm sc">Home Life Academy</span>
+          <span class="role"><b>Aliado educativo</b>Aliado del Prácticum 2026. <!-- Contribución por confirmar con José --></span>
+        </li>
+        <li class="spn">
+          <span class="wm">Café Santo Domingo<small>Induban</small></span>
+          <span class="role"><b>Estación de café</b>El café de toda la jornada.</span>
+        </li>
+        <li class="spn">
+          <span class="wm">Imprenta Amigos del Hogar</span>
+          <span class="role"><b>Impresión</b>Los cuadernos de trabajo de 20 páginas.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 VISITA / DETALLES ============ -->
+<section class="sec bg-papel" id="visita" aria-labelledby="t-vi">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>09</b> Visita</div>
+    <div class="g12">
+      <div class="vi-info reveal">
+        <h2 id="t-vi" class="h2">Detalles del evento</h2>
+        <div class="vi-rows">
+          <div class="vi-row"><span class="label">Fecha</span><p><strong>Fecha por confirmar · 2027</strong><br />La publicaremos en esta página y la enviaremos por correo a quienes compren su boleta.</p></div>
+          <div class="vi-row"><span class="label">Horario</span><p class="num">9:00 a.m. – 4:00 p.m.</p></div>
+          <div class="vi-row"><span class="label">Lugar</span><p><strong>Iglesia de Convertidos a Cristo (ICC)</strong><br />Santo Domingo · <a href="https://maps.app.goo.gl/Gam5twUXUQkL1ZbA7" target="_blank" rel="noopener">Abrir en Google Maps</a></p></div>
+          <div class="vi-row"><span class="label">Acreditación</span><p>Hora de acreditación: por confirmar.</p></div>
+          <div class="vi-row"><span class="label">Parqueo</span><p>Por confirmar con la iglesia.</p></div>
+          <div class="vi-row"><span class="label">Accesibilidad</span><p>Por confirmar. Si necesitas apoyo especial, escríbenos antes del evento.</p></div>
+          <div class="vi-row"><span class="label">Qué llevar</span><p>Tu Biblia, un bolígrafo y ganas de aprender. Los materiales del taller los ponemos nosotros.</p></div>
+          <div class="vi-row"><span class="label">Contacto</span><p>José Genao Pilarte, Coordinador<br /><a href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a><br /><a href="tel:+18492016825">(849) 201-6825</a> · <a href="tel:+18097637495">(809) 763-7495</a></p></div>
+        </div>
+      </div>
+      <div class="vi-map reveal">
+        <iframe src="https://www.google.com/maps?q=18.4593616,-69.9283994&amp;z=16&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de la Iglesia de Convertidos a Cristo, Santo Domingo"></iframe>
+        <a class="link" href="https://maps.app.goo.gl/Gam5twUXUQkL1ZbA7" target="_blank" rel="noopener">Cómo llegar <span class="ar" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 PREGUNTAS FRECUENTES ============ -->
+<section class="sec bg-marfil" id="preguntas" aria-labelledby="t-fq">
+  <div class="wrap">
+    <div class="sec-no reveal"><b>10</b> Preguntas frecuentes</div>
+    <div class="g12">
+      <div class="fq-head reveal">
+        <h2 id="t-fq" class="h2">Preguntas frecuentes</h2>
+        <p class="muted" style="margin-top:18px">¿No encuentras tu respuesta? Escribe a José por <a class="link" href="https://wa.me/18492016825" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </div>
+      <div class="fq-list reveal">
+        <div class="fq-group">
+          <span class="label oro">Fecha y boletas</span>
+          <details class="fq"><summary>¿Cuándo es el Prácticum 2027?</summary><div class="a">La fecha está por confirmar con Classical Conversations. Será de 9:00 a.m. a 4:00 p.m., en la Iglesia de Convertidos a Cristo. La publicaremos aquí y la enviaremos por correo a quienes ya tengan boleta.</div></details>
+          <details class="fq"><summary>¿Puedo pagar en pesos?</summary><div class="a">Sí. Elige «Transferencia» en <a href="#calc">Tu pedido</a> y verás el total en RD$ y los datos de la cuenta del Banco Popular. El pago con tarjeta en línea se cobra en dólares (US$).</div></details>
+          <details class="fq"><summary>¿Cómo uso un código de descuento?</summary><div class="a">Si llegaste con un enlace de descuento, ya está aplicado. Si tienes un código, ábrelo en «¿Tienes un código de descuento?» dentro de <a href="#calc">Tu pedido</a>. También puedes escribirlo en la página de pago de Stripe.</div></details>
+          <details class="fq"><summary>¿Recibiré una confirmación?</summary><div class="a">Sí. Al pagar con tarjeta, recibirás el recibo de Stripe por correo si lo tenemos activado. Si pagas por transferencia, confirmamos tu cupo por WhatsApp al recibir el comprobante.</div></details>
+          <details class="fq"><summary>¿Y si no puedo asistir después de pagar?</summary><div class="a">Escríbenos cuanto antes a <a href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a> y la política es esta: cambio de nombre hasta 7 días antes del evento, sin costo; reembolso solo si el evento se cancela.</div></details>
+        </div>
+        <div class="fq-group">
+          <span class="label oro">Niños</span>
+          <details class="fq"><summary>¿Puedo llevar a mis hijos?</summary><div class="a">Sí. Mientras participas, tus hijos están en el Área Infantil con actividades de ciencia por edades. La boleta de niño (US$12 / RD$700) incluye su almuerzo. Al final del día se entregan de forma segura solo a la persona registrada.</div></details>
+        </div>
+        <div class="fq-group">
+          <span class="label oro">Becas y patrocinio</span>
+          <details class="fq"><summary>¿Cómo solicito una beca?</summary><div class="a">Escríbenos por correo o WhatsApp desde <a href="#apoyo">Becas y patrocinio</a>. Tu solicitud es confidencial.</div></details>
+          <details class="fq"><summary>¿A qué se destinan los patrocinios?</summary><div class="a">A becas para familias que no pueden pagar su boleta y a los regalos que reciben los asistentes.</div></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="sec bg-crema final" aria-labelledby="t-final">
+  <div class="wrap reveal">
+    <div class="rule-orn" aria-hidden="true"><i></i><b></b><i></i></div>
+    <p class="q">«No hay nada tan oscuro o despreciable, ni siquiera en los rincones más pequeños de la tierra, en que no puedan verse señales del poder y la sabiduría de Dios.»</p>
+    <cite class="label oro">Juan Calvino, comentario al Salmo 19</cite>
+    <h2 id="t-final" class="h2">Educa en casa con un método, una cosmovisión y una comunidad.</h2>
+    <div class="cta">
+      <a class="btn btn-primary btn-lg" href="#boletas">Comprar boletas</a>
+      <a class="link" href="#apoyo">Patrocinar una familia <span class="ar" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIE ============ -->
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="ft-brand">
+        <img src="cc-logo-navy.svg" alt="Classical Conversations" width="199" height="137" loading="lazy" />
+        <p>Conocer a Dios y darlo a conocer. Educación clásica cristiana para familias que educan en casa.</p>
+      </div>
+      <div class="ft-col">
+        <h4>El evento</h4>
+        <a href="#practicum">El Prácticum</a>
+        <a href="#programa">Programa</a>
+        <a href="#entrenador">Entrenador</a>
+        <a href="#boletas">Boletas</a>
+      </div>
+      <div class="ft-col">
+        <h4>Ayuda</h4>
+        <a href="#apoyo">Becas y patrocinio</a>
+        <a href="#visita">Visita</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="https://classical-conversations-rd.github.io/practicum-2026-/">Prácticum 2026</a>
+      </div>
+      <div class="ft-col w">
+        <h4>Contacto</h4>
+        <p>José Genao Pilarte<br />Coordinador, Classical Conversations República Dominicana</p>
+        <a href="mailto:ccrep.dom@gmail.com">ccrep.dom@gmail.com</a>
+        <a href="tel:+18492016825">(849) 201-6825</a>
+        <a href="tel:+18097637495">(809) 763-7495</a>
+        <a href="https://www.instagram.com/ccrep.dom/" target="_blank" rel="noopener">Instagram @ccrep.dom</a>
+      </div>
+    </div>
+    <p class="ft-credits">Láminas: I. Andreas Cellarius, <i>Harmonia Macrocosmica</i> (1660). II. Maria Sibylla Merian, <i>Metamorphosis insectorum Surinamensium</i> (1705). III. Galileo Galilei, <i>Sidereus Nuncius</i> (1610). IV. Robert Hooke, <i>Micrographia</i> (1665). V. Ernst Haeckel, <i>Kunstformen der Natur</i> (1904). Todas de dominio público, vía Wikimedia Commons.</p>
+    <div class="ft-bottom">
+      <span>© 2026–2027 Classical Conversations · República Dominicana</span>
+      <span>Prácticum 2027 · Iglesia de Convertidos a Cristo, sede</span>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-primary fab" id="fab" href="#boletas">Comprar boletas</a>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Aparición al hacer scroll (desactivada con prefers-reduced-motion)
+  var revs=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){
+    revs.forEach(function(el){el.classList.add('in');});
+  } else {
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    revs.forEach(function(el){io.observe(el);});
+  }
+
+  // Botón flotante: visible al pasar el hero, oculto en la sección de boletas
+  (function(){
+    var fab=document.getElementById('fab'),hero=document.getElementById('top'),tk=document.getElementById('boletas');
+    if(!fab||!hero||!tk||!('IntersectionObserver' in window))return;
+    var heroOut=false,tkIn=false;
+    function upd(){fab.classList.toggle('show',heroOut&&!tkIn);}
+    new IntersectionObserver(function(es){es.forEach(function(e){heroOut=!e.isIntersecting;});upd();},{threshold:.05}).observe(hero);
+    new IntersectionObserver(function(es){es.forEach(function(e){tkIn=e.isIntersecting;});upd();},{threshold:0}).observe(tk);
+  })();
+
+  // Retorno desde Stripe (?pago=exito / ?pago=cancelado)
+  (function(){
+    var p=new URLSearchParams(location.search).get('pago');
+    var n=document.getElementById('notice'),tx=document.getElementById('noticeTx');
+    if(!p||!n)return;
+    if(p==='exito'){
+      var extra='';
+      try{var o=JSON.parse(sessionStorage.getItem('pr27order')||'null');
+        if(o){var bits=[];if(o.a)bits.push(o.a+(o.a===1?' adulto':' adultos'));if(o.k)bits.push(o.k+(o.k===1?' niño':' niños'));if(o.l)bits.push(o.l+(o.l===1?' almuerzo de adulto':' almuerzos de adulto'));if(bits.length)extra=' Tu pedido: '+bits.join(', ')+(o.t?' · total '+o.t:'')+'.';}
+        sessionStorage.removeItem('pr27order');}catch(e){}
+      n.classList.add('ok');
+      tx.textContent='Pago recibido. Gracias por reservar tu lugar en el Prácticum 2027.'+extra+' Recibirás el recibo de Stripe por correo si lo tenemos activado. La fecha está por confirmar: te la enviaremos por correo en cuanto se anuncie.';
+      n.classList.add('show');
+      document.getElementById('noticeClose').addEventListener('click',function(){n.classList.remove('show');});
+    } else if(p==='cancelado'){
+      var ob=document.querySelector('.order-b'),sg=document.querySelector('.order-b .seg'),calc=document.getElementById('calc');
+      if(!ob||!sg)return;
+      var m=document.createElement('p');m.className='cancel-msg';m.setAttribute('role','status');
+      m.textContent='El pago se canceló y no se hizo ningún cargo. Puedes revisar tu pedido e intentarlo de nuevo cuando quieras.';
+      ob.insertBefore(m,sg);
+      var go=function(){(document.querySelector('.tk-layout')||calc).scrollIntoView({behavior:'auto',block:'start'});};
+      go();window.addEventListener('load',go);
+    }
+  })();
+
+  // Calculadora y pago
+  (function(){
+    var P={qAd:{usd:30,dop:1800,n:'Adulto',np:'Adultos'},qNi:{usd:12,dop:700,n:'Niño',np:'Niños'},qCo:{usd:13,dop:780,n:'Almuerzo de adulto',np:'Almuerzos de adulto'}};
+    var ids=['qAd','qNi','qCo'],el={};
+    ids.forEach(function(i){el[i]=document.getElementById(i);});
+    if(!el.qAd)return;
+    var tMain=document.getElementById('tMain'),tAlt=document.getElementById('tAlt'),lines=document.getElementById('lines');
+    var ctaCard=document.getElementById('ctaCard'),ctaWa=document.getElementById('ctaWa');
+    var panelCard=document.getElementById('panelCard'),panelTransfer=document.getElementById('panelTransfer');
+    var pms=document.querySelectorAll('.pm'),prices=document.querySelectorAll('.pi-price');
+    var promoIn=document.getElementById('promoIn'),promoBtn=document.getElementById('promoBtn'),promoMsg=document.getElementById('promoMsg'),promoBox=document.getElementById('promoBox');
+    var WA='https://wa.me/18492016825?text=',method='card',busy=false;
+    // Descuentos conocidos (deben coincidir con los cupones configurados en Stripe).
+    // Se aplican solo en adultos y solo en el pago con tarjeta.
+    var PROMOS={
+      'CCRD2027':{pct:0.28,item:'qAd',label:'Descuento familias CC'},
+      'HOMELIFE':{pct:0.20,item:'qAd',label:'Descuento familias Home Life Academy'}
+    };
+    var code='',active=null;
+    function setCode(c,fromUrl){
+      code=(c||'').trim().toUpperCase().replace(/\s+/g,'');
+      active=PROMOS[code]||null;
+      promoMsg.className='promo-msg';
+      if(!code){promoMsg.textContent='';}
+      else if(active){promoMsg.className='promo-msg ok';promoMsg.textContent=(fromUrl?'Desde tu enlace: ':'Código reconocido: ')+active.label+', '+Math.round(active.pct*100)+'% en boletas de adulto (pago con tarjeta). Lo confirmamos al abrir la página de pago.';}
+      else {promoMsg.textContent='Guardamos el código «'+code+'». Lo validaremos en la página de pago de Stripe; si no es válido, podrás escribir otro allí.';}
+      render();
+    }
+    function vv(i){var n=parseInt(el[i].value,10);if(isNaN(n)||n<0)n=0;if(n>50)n=50;return n;}
+    function fUSD(n){var r=Math.round(n*100)/100;return 'US$'+(r%1===0?r.toLocaleString('en-US'):r.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}));}
+    function fDOP(n){return 'RD$'+Math.round(n).toLocaleString('en-US');}
+    function li(a,b,cls){var x=document.createElement('li');if(cls)x.className=cls;var s1=document.createElement('span');s1.textContent=a;var s2=document.createElement('span');s2.textContent=b;x.appendChild(s1);x.appendChild(s2);return x;}
+    function render(){
+      var card=method==='card',u=0,d=0;
+      prices.forEach(function(p){var base=p.textContent.split(' c/u')[1]||'';p.textContent=(card?p.getAttribute('data-usd'):p.getAttribute('data-dop'))+' c/u'+base;});
+      lines.innerHTML='';
+      ids.forEach(function(i){
+        var q=vv(i);u+=q*P[i].usd;d+=q*P[i].dop;
+        if(q>0)lines.appendChild(li(q+' × '+(q===1?P[i].n:P[i].np),card?fUSD(q*P[i].usd):fDOP(q*P[i].dop)));
+      });
+      var du=0,dd=0;
+      if(card&&active){var q=vv(active.item);du=q*P[active.item].usd*active.pct;dd=q*P[active.item].dop*active.pct;}
+      if(du>0)lines.appendChild(li(active.label+' (−'+Math.round(active.pct*100)+'%)','−'+fUSD(du),'disc'));
+      var count=vv('qAd')+vv('qNi')+vv('qCo');
+      if(card){
+        tMain.textContent=fUSD(u-du);
+        tAlt.textContent='Equivale a '+fDOP(d-dd)+' · se cobra en US$';
+        if(!busy)ctaCard.textContent=count?('Continuar al pago · '+fUSD(u-du)):'Elige al menos una boleta';
+      } else {
+        tMain.textContent=fDOP(d);
+        tAlt.textContent='Equivale a '+fUSD(u)+' · pago en RD$';
+        var msg='Hola, quiero reservar para el Prácticum 2027 (Ciencias).\nAdultos: '+vv('qAd')+'\nNiños (incl. almuerzo): '+vv('qNi')+'\nAlmuerzo de adulto: '+vv('qCo')+'\nTotal transferido: '+fDOP(d)+'\nAdjunto mi comprobante.';
+        ctaWa.setAttribute('href',WA+encodeURIComponent(msg));
+        ctaWa.textContent='Ya transferí '+fDOP(d)+' · enviar comprobante';
+      }
+      ctaCard.setAttribute('aria-disabled',count?'false':'true');
+    }
+    function setMethod(m){
+      method=m;
+      pms.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-method')===m?'true':'false');});
+      panelCard.hidden=(m!=='card');panelTransfer.hidden=(m!=='transfer');
+      render();
+    }
+    pms.forEach(function(b){b.addEventListener('click',function(){setMethod(b.getAttribute('data-method'));});});
+    ids.forEach(function(i){el[i].addEventListener('input',render);el[i].addEventListener('blur',function(){el[i].value=vv(i);render();});});
+    document.querySelectorAll('.cstep').forEach(function(b){
+      b.addEventListener('click',function(){
+        var t=document.getElementById(b.getAttribute('data-target'));
+        var nv=(parseInt(t.value,10)||0)+parseInt(b.getAttribute('data-d'),10);
+        if(nv<0)nv=0;if(nv>50)nv=50;t.value=nv;render();
+      });
+    });
+    promoBtn.addEventListener('click',function(){setCode(promoIn.value,false);});
+    promoIn.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();setCode(promoIn.value,false);}});
+    function resetCta(){busy=false;ctaCard.style.pointerEvents='';render();}
+    ctaCard.addEventListener('click',function(e){
+      e.preventDefault();
+      if(busy)return;
+      var a=vv('qAd'),k=vv('qNi'),l=vv('qCo');
+      if(a+k+l===0){promoMsg.textContent='';ctaCard.focus();return;}
+      try{sessionStorage.setItem('pr27order',JSON.stringify({a:a,k:k,l:l,t:tMain.textContent}));}catch(x){}
+      busy=true;ctaCard.textContent='Abriendo la página de pago…';ctaCard.style.pointerEvents='none';
+      fetch('/.netlify/functions/create-checkout-session',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({adults:a,kids:k,lunch:l,promo:code,event:'2027'})})
+        .then(function(r){return r.json();})
+        .then(function(d){if(d&&d.url){if(code&&d.promoApplied===false&&!confirm('El código no está activo. ¿Continuar sin descuento?')){resetCta();return;}window.location.href=d.url;}else{alert((d&&d.error)||'No se pudo iniciar el pago. Intenta de nuevo o escríbenos por WhatsApp.');resetCta();}})
+        .catch(function(){alert('No se pudo iniciar el pago. Intenta de nuevo o escríbenos por WhatsApp.');resetCta();});
+    });
+    var urlPromo=new URLSearchParams(location.search).get('promo');
+    if(urlPromo){promoIn.value=urlPromo.trim().toUpperCase();promoBox.open=true;setCode(urlPromo,true);}
+    setMethod('card');
+  })();
+})();
+</script>
+</body>
+</html>
